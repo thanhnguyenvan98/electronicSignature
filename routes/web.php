@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
+
+
+route::get('/','loginController@getView');
+
+Route::post('postLogin',['as'=>'postLogin','uses'=>'loginController@check']);
