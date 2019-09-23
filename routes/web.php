@@ -19,3 +19,19 @@ Route::get('/home', function () {
 route::get('/','loginController@getView');
 
 Route::post('postLogin',['as'=>'postLogin','uses'=>'loginController@check']);
+
+route::get('calendar',function(){
+	return view('calendar');
+});
+
+route::get('editCalendar',function(){
+	return view('editCalendar');
+});
+
+route::get('signatureCalendar',function(){
+	return view('signatureCalendar');
+});
+
+route::get('notification',function(){
+	return view('notification');
+});

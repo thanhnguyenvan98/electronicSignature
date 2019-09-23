@@ -21,7 +21,7 @@ class loginController extends Controller
     	//echo $username . " ---- " . $pass;
 
     	$teacher = teacher::all()->toArray();
-    	var_dump($teacher);
+    	//var_dump($teacher);
     	$dem = 0;
     	foreach ($teacher as $key => $value) {
     		if ($value['teacher_userName'] == $username && $value['teacher_password'] == $pass) {

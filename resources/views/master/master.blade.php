@@ -56,3 +56,6 @@
     </div>
 <script type="text/javascript" src="{{asset('assets/scripts/main.js')}}"></script></body>
 </html>
+
+{{--code phan mo rong LargeModal--}}
+@yield('LargeModal')
